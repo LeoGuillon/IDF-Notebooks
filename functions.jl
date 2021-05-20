@@ -4,7 +4,7 @@
 function that allows to load data from a given station.
 """
 
-function load_station(station_id::String)
+function load_stationF(station_id::String)
     path = "C:/Users/leogu/Dropbox/Stage/Perso/Codes/Julia/dat/"*station_id*".csv"
     
     df = CSV.read(path, DataFrame)
@@ -68,7 +68,7 @@ end
 compute the BIC obtained with a GEV estimation
 """
 
-function BIC_GEV(y::Vector{Float64})
+function BIC_GEVF(y::Vector{Float64})
     p = gevfit(y).θ̂
     n = length(y)
 
