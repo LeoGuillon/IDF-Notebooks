@@ -4,3 +4,5 @@
 deps/deps.jl
 .vscode/
 .ipnyb_checkpoints/
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
